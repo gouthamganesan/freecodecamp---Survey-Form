@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egaithadam Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 id="title">Egaithadam</h1>
+        <p>Create a new path</p>
+      </div>
+    </header>
+
+    <div id="form">
+      <section class="container">
+        <p id="description">
+          Become a member of Egaithadam and get involved with all our activities
+        </p>
+      </section>
+
+      <div class="container">
+        <form id="survey-form">
+          <div>
+            <label id="name-label" for="name">Name</label
+            ><input type="text" id="name" placeholder="Enter name" required />
+          </div>
+          <div>
+            <label id="email-label" for="email">Email</label
+            ><input
+              type="email"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+          <div>
+            <label id="number-label" for="number">Age (Optional)</label
+            ><input
+              type="number"
+              id="number"
+              placeholder="Enter age"
+              min="1"
+              max="150"
+            />
+          </div>
+          <div>
+            <label for="dropdown">District</label>
+            <select name="district" id="dropdown">
+              <option value="chennai">Chennai</option>
+              <option value="coimbatore">Coimbatore</option>
+              <option value="erode">Erode</option>
+              <option value="kanyakumari">Kanyakumari</option>
+              <option value="madurai">Madurai</option>
+              <option value="nilgiris">Nilgiris</option>
+              <option value="salem">Salem</option>
+              <option value="tenkasi">Tenkasi</option>
+              <option value="trichy">Trichy</option>
+              <option value="villupuram">Villupuram</option>
+            </select>
+          </div>
+          <div>
+            <label for="gender">Gender</label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+          <div>
+            <label for="interests">Interests</label><br />
+            <input type="checkbox" name="donate" value="donate" />
+            <label for="donate">Donate money, items, anything</label><br />
+            <input type="checkbox" name="time" value="time" />
+            <label for="time">Spend time with us</label><br />
+            <input type="checkbox" name="share" value="share" />
+            <label for="share">Pass on information for others</label>
+            <p id="interest-description">
+              Depending on your interests, you'll receive invitations for the
+              activities we conduct.
+            </p>
+          </div>
+          <div>
+            <label for="message">Message</label
+            ><textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Share your thoughts"
+            ></textarea>
+          </div>
+          <button id="submit" class="submit_button">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Egaithadam, Copyright &copy; 2020</p>
+    </footer>
+  </body>
+</html>
